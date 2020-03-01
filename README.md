@@ -83,7 +83,7 @@ npm install @google-cloud/tasks
 
   if (inSeconds) {
     task.scheduleTime = {
-      seconds: inSeconds + Date.now() / 1000,
+      seconds: Number(inSeconds) + Date.now() / 1000,
     };
   }
 

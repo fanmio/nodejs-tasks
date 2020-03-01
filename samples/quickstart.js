@@ -48,7 +48,7 @@ async function createTask(project, location, queue, payload, inSeconds) {
 
   if (inSeconds) {
     task.scheduleTime = {
-      seconds: inSeconds + Date.now() / 1000,
+      seconds: Number(inSeconds) + Date.now() / 1000,
     };
   }
 
